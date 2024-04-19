@@ -16,7 +16,8 @@ body {
     flex-direction: column;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 10px;
+    padding-top: 10px;
+    
 }
 
 .note {
@@ -35,7 +36,7 @@ body {
     background-color: transparent;
     backdrop-filter: blur(10px);
     margin: auto auto;
-    border: 2px solid red;
+    border: 2px solid orange;
     border-radius: 10px;
 }
 
@@ -64,6 +65,18 @@ span {
 h5 {
     font-size: 3rem;
     text-align: start
+}
+
+.seconds-r {
+    color: red;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    backdrop-filter: blur(15px);
 }
 
 

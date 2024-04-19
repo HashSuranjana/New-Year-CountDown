@@ -2,7 +2,7 @@ let get_year = new Date() ; //initialize a new Date object
 
 let current_Year = get_year.getFullYear() + 1; //initialize the upcoming year
 
-document.getElementById('note').innerHTML = "New Year " + current_Year + " !" ;
+document.getElementById('note').innerHTML = "New Year " + current_Year + " CountDown !" ;
 
 let day , month , days , daysfeb; // initialize the variables
 
@@ -26,15 +26,17 @@ let countdown = () => {
 
     let date = new Date() ; //initialize a new Date object
 
+    console.log(date.getMinutes());
+
     day = date.getDate() ; //gives the current date
 
     month = date.getMonth() + 1 ; // getMonth gives 0 to 11 every month. so +1 gives real numbering of the month
 
     document.getElementById('seconds-r').innerHTML = timeDisplay( 60 - date.getSeconds() ) ;   //gives remaining seconds
 
-    document.getElementById('minutes-r').innerHTML = timeDisplay( 60 - date.getMinutes() ) + " : " ; //gives remaining minutes
+    document.getElementById('minutes-r').innerHTML = timeDisplay( 59 - date.getMinutes() ) + " : " ; //gives remaining minutes
 
-    document.getElementById('hours-r').innerHTML = timeDisplay( 24 - date.getHours() ) + " : " ; //gives remaining hours
+    document.getElementById('hours-r').innerHTML = timeDisplay( 23 - date.getHours() ) + " : " ; //gives remaining hours
 
     //swith for choose the month
     switch( month ){
