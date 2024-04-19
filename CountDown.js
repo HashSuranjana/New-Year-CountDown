@@ -37,18 +37,18 @@ let countdown = () => {
     document.getElementById('hours-r').innerHTML = timeDisplay( 24 - date.getHours() ) + " : " ; //gives remaining hours
 
     //swith for choose the month
-    switch(month){
+    switch( month ){
 
         case 1 :
 
             document.getElementById('days-r').innerHTML = timeDisplay( days - day )+ " : " ; //gives remaining days 
-             document.querySelector('body').style.backgroundImage = "url('Images/January.jpg')" ;  //gives a background image for each month
+            document.querySelector('body').style.backgroundImage = "url('Images/January.jpg')" ;  //gives a background image for each month
             break;
 
         case 2 :
 
             document.getElementById('days-r').innerHTML = timeDisplay( days - (day + 31) ) + " : " ; //gives remaining days
-             document.querySelector('body').style.backgroundImage = "url('Images/February.jpg')" ;  //gives a background image for each month
+            document.querySelector('body').style.backgroundImage = "url('Images/February.jpg')" ;  //gives a background image for each month
             break;
 
         case 3 :
@@ -72,7 +72,7 @@ let countdown = () => {
         case 6 :
 
             document.getElementById('days-r').innerHTML = timeDisplay( days - (day + daysfeb + 123) ) + " : " ; //gives remaining days
-            document.querySelector('body').style.backgroundImage = "url('Images/april.jpg')" ;  //gives a background image for each month
+            document.querySelector('body').style.backgroundImage = "url('Images/June.jpg')" ;  //gives a background image for each month
             break;
 
         case 7 :
@@ -90,25 +90,25 @@ let countdown = () => {
         case 9 :
 
             document.getElementById('days-r').innerHTML = timeDisplay( days - (day + daysfeb + 215) ) + " : " ; //gives remaining days
-            document.querySelector('body').style.backgroundImage = "url('Images/april.jpg')" ;  //gives a background image for each month
+            document.querySelector('body').style.backgroundImage = "url('Images/september.jpg')" ;  //gives a background image for each month
             break;
 
         case 10 :
 
             document.getElementById('days-r').innerHTML = timeDisplay( days - (day + daysfeb + 245) ) + " : " ; //gives remaining days
-            document.querySelector('body').style.backgroundImage = "url('Images/april.jpg')" ;  //gives a background image for each month
+            document.querySelector('body').style.backgroundImage = "url('Images/october.jpg')" ;  //gives a background image for each month
             break;
 
         case 11 :
 
             document.getElementById('days-r').innerHTML = timeDisplay( days - (day + daysfeb + 276) ) + " : " ; //gives remaining days
-            document.querySelector('body').style.backgroundImage = "url('Images/april.jpg')" ;  //gives a background image for each month
+            document.querySelector('body').style.backgroundImage = "url('Images/november.jpg')" ;  //gives a background image for each month
             break;
 
         case 12 :
 
             document.getElementById('days-r').innerHTML = timeDisplay( days - (day + daysfeb + 306) ) + " : " ; //gives remaining days
-            document.querySelector('body').style.backgroundImage = "url('Images/april.jpg')" ;  //gives a background image for each month
+            document.querySelector('body').style.backgroundImage = "url('Images/december.jpg')" ;  //gives a background image for each month
             break;
 
 
