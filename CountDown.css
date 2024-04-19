@@ -52,14 +52,18 @@ body {
 
     align-items: center;
     text-align: center;
-}
 
-span:first-child{
-    font-size: 6rem;
-    text-align: center;
 }
 
 span {
-    font-size: 2rem;
+
+    font-size: 6rem;
+    
 }
+
+h5 {
+    font-size: 3rem;
+    text-align: start
+}
+
 
